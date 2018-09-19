@@ -4,7 +4,7 @@ kosong="echo"
 
 if [ $cek_bit = 64 ]
 then
-  sudo dpkg -i /amd64/*.deb
+  sudo dpkg -i amd64/*.deb
   sudo apt update
   sudo apt install -f
   $kosong
@@ -12,7 +12,7 @@ then
 
 elif [ $cek_bit = 32 ]
 then
-  sudo dpkg -i /i386/*.deb
+  sudo dpkg -i i386/*.deb
   sudo apt update
   sudo apt install -f
   $kosong
